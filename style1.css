@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(22, 2, 78);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    border-bottom: 3px solid rgba(3, 3, 58, 0.027);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nome{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.nome:hover{
+    text-shadow: 2px 3px 10px #434cca;
+    transform: scale(1.1);
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 4rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+nav a:hover, nav a.active{
+    color: rgb(4, 4, 255);
+    border-bottom: 3px solid;
+}
+
+@media(max-width:400px){
+    nav>a{
+        min-width: 280px;
+        border-radius: 0px 0px 16px 16px;
+    
+    }
+    }
+
+
+@media(max-width:995px){
+    nav a{
+        font-size: 0.7rem;
+        margin: 3rem 0 0.8rem;
+    }
+    
+    nav a:hover, nav a.active{
+        padding: 0.5rem;
+        border-radius: 0.5rem solid var(--cor1);
+        color: #0112f8;
+    }
+
+    
+}
+
+section{
+    min-height: 100vh;
+    padding: 8rem 8% 8rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 2;
+}
+
+.home{
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px 0px 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-image: linear-gradient(to left, rgb(71, 71, 233), rgb(34, 34, 238));
+}
+
+.home.home-content{
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+span{
+    color: white;
+    text-shadow: 2px 2px blue;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-img{
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.home-img img{
+    margin-top: 1%;
+    width: 32vw;
+    border-radius: 50%;
+}
+
+.tipo-texto{
+    min-width: 270px;
+    color: black;
+}
+
+.tipo-texto span::before{
+    content: "";
+    color: white;
+    text-shadow: 2px 2px blue;
+    animation: words 20s infinite;
+}
+
+
+@keyframes words{
+    0%, 20%{
+        content: "Marketing Digital";
+    }
+    21%, 40%{
+        content: "Trafego Pago";
+    }
+    41%, 60%{
+        content: "Vendas";
+    }
+    61%, 80%{
+        content: "Negociação";
+    }
+    81%, 100%{
+        content: "Analize/Marcas";
+    }
+}
+
+@media(max-width:100px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 3.8rem;
+    }
+
+    .home-img img{
+        max-width: 400px;
+        min-width: 270px;
+        width: 70vh;
+        margin-top: 3rem;
+    }
+}
+
+#Education{
+    min-width: 400px;
+    max-width: 800px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-education>p>abbr{
+    text-decoration: none;
+    background-color: #434cca;
+    padding: 2px;
+}
+
+#Skills{
+    min-width: 400px;
+    max-width: 800px;
+
+}
+
+#Servicos{
+    min-width: 400px;
+    max-width: 800px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: rgb(2, 2, 39);
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 0.7rem;
+}
+
+footer>p>a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+footer>p>a::after{
+    content:'\00A0\1F517';
+
+}
+
+
+
